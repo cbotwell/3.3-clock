@@ -1,6 +1,12 @@
-var body = document.getElementsByTagName('body');
+var content = document.getElementsByTagName('body')[0];
 var time = document.getElementById('t');
 var bar = document.getElementById('bar');
+
+var timeToHex = function (t, mult) {
+    var toHex = t * 255 / mult;
+    toHex = parseInt(toHex);
+    return toHex.toString(16);
+};
 
 window.setInterval ( function() {
     var date = new Date ();
@@ -31,12 +37,10 @@ window.setInterval ( function() {
     console.log(percent);
     bar.style.width = percent * 100 + '%';
 
-    if (seconds < 10) {
-        body.style.background = 0 + seconds + "7EC2";
-    } else {
-        body.style.background = seconds + "7EC2";
+    var color = '#' + timeToHex(seconds, 60) + timeToHex(minutes, 60) + timeToHex(hours, 60);
+    content.style.background = color;
+    console.log(color);
 
-    }
 }, 1000 );
 
 
