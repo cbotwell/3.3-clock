@@ -3,9 +3,16 @@
 @import 'neat';
 
 #t {
-    vertical-align: middle;
+
     text-align: center;
     font-family: HelveticaNeue, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 10em;
+}
+#bar {
+    border-top: 3px solid black;
+    height: 1px;
+    width: 100%;
+    margin: 1em auto 0 auto;
+    transition: width 1s;
 }
