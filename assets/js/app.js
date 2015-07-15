@@ -24,6 +24,9 @@ window.setInterval ( function() {
         console.log(current);
         time.innerHTML = current;
     }
+    var percent = seconds / 60;
+    console.log(percent);
+
     }, 1000 );
 
 
