@@ -3,14 +3,14 @@
 @import 'neat';
 
 #t {
-
+    color: white;
     text-align: center;
-    font-family: HelveticaNeue, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 10em;
+    font-family: GillSans, HelveticaNeue, Helvetica, sans-serif;
+    font-size:8em;
+    margin: auto;
 }
 #bar {
-    border-top: 3px solid black;
+    border-top: 3px solid white;
     height: 1px;
     width: 100%;
     margin: 1em auto 0 auto;
@@ -21,8 +21,8 @@ body {
 }
 .wrapper {
     // position: relative;
-    // max-width: 50%;
-    // margin: auto;
+    max-width: 40%;
+    margin: auto;
     // overflow: auto;
 }
 .clock {
