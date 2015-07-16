@@ -21,13 +21,13 @@ body {
 }
 .wrapper {
     // position: relative;
-    max-width: 40%;
-    margin: auto;
-    // overflow: auto;
+    // height: 100%;
+    // width: 100%;
 }
 .clock {
     // position: absolute;
-    // height: 179px;
     // top: 50%;
-    // margin-top: -179px;
+    // transform: translateY(-50%);
+    max-width: 40%;
+    margin: auto;
 }
