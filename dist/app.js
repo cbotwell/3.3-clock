@@ -41,6 +41,11 @@ window.setInterval ( function() {
     content.style.background = color;
     console.log(color);
 
+    var hextime = timeToHex(seconds, 60) + ':' + timeToHex(minutes, 60) + ':' + timeToHex(hours, 60);
+    content.onMouseOver = function () {
+        time.innerHTML = hextime;
+    };
+
 }, 1000 );
 
 
