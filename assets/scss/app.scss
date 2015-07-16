@@ -1,0 +1,30 @@
+@import 'reset';
+@import 'bourbon';
+@import 'neat';
+
+#t {
+    color: white;
+    text-align: center;
+    font-family: GillSans, HelveticaNeue, Helvetica, sans-serif;
+    font-size:8em;
+    margin: auto;
+}
+#bar {
+    border-top: 3px solid white;
+    height: 1px;
+    width: 100%;
+    margin: 1em auto 0 auto;
+    transition: width 1s;
+}
+body {
+    height: 100vh;
+}
+
+.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 40%;
+    margin: auto;
+}
